@@ -15,7 +15,7 @@ ORDER BY in_department.department_name;
 
 3. Create Clone Table using query.
 
-CREATE TABLE in_dept LIKE in_department;
+CREATE TABLE in_dept LIKE in_department; 
 
 
 4. find the second highest salary
