@@ -1,0 +1,22 @@
+
+1. Write a Query to joining Feb employee details
+
+SELECT * FROM employees
+WHERE to_char(hire_date, 'mon')='jan';
+
+
+2. Write a query to get the department name and number of employees in the department.
+
+SELECT in_department.department_name AS 'Department Name', COUNT(*) AS 'No of Employees' FROM in_department 
+INNER JOIN emp_employee ON emp_employee.employee_department_id = in_department.department_id 
+GROUP BY in_department.department_id, in_department.department_name 
+ORDER BY in_department.department_name;
+
+
+3. Create Clone Table using query.
+
+CREATE TABLE in_dept LIKE in_department;
+
+
+4. find the second highest salary
+SELECT MAX(SALARY) FROM Employee WHERE SALARY < (SELECT MAX(SALARY) FROM Employee);

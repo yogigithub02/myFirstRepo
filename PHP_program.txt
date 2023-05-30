@@ -1,0 +1,65 @@
+1.
+Input:- 
+1 4 7
+2 5 8
+3 6 9
+
+Program:-
+
+<?php
+	for($i=1; $i<=3; $i++){
+      $i1 = $i+3;
+      $i2 = $i1+3;
+      
+      echo "$i"." "."$i1"." ".$i2;
+      echo "\n";
+    }
+?>
+
+Output:- 
+1 4 7
+2 5 8
+3 6 9
+
+2. Swap two Numbers
+Approch 1.
+<?php
+	$x = 50;
+	$y = 60;
+	
+	$temp = $x;
+	$x = $y;
+	$y = $temp;
+	
+	echo "value of x = $x";
+	echo "\n";
+	echo "value of y = $y";
+
+
+?>
+Approach 2. Without Using 3rd Variable
+<?php
+	$a = 10;
+	$b = 20;
+
+	list($a, $b) = array($b, $a);
+
+	echo "value of a = $a";
+	echo "\n";
+	echo "value of b = $b";
+?>
+
+Approach 3. Without Using 3rd Variable & Without Using PHP Function
+<?php
+	$a=234;  
+	$b=345;  
+	
+	//using arithmetic operation  
+	$a=$a+$b;  
+	$b=$a-$b;  
+	$a=$a-$b;  
+	
+	echo "Value of a: $a</br>";  
+	echo "\n";
+	echo "Value of b: $b</br>";  
+?>

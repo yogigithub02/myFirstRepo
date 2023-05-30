@@ -1,0 +1,13 @@
+Laravel Commands - Windows:
+
+1. Install Composer Globally:
+   composer global require laravel/installer
+
+2. Create New Project Without Particular Version:
+   composer create-project laravel/laravel your-project-name
+   
+3. Create New Project With Particular Version:
+   composer create-project laravel/laravel your-project-name 4.2.*
+   
+4. Create API Controller:
+   php artisan make:controller controllerName --api

@@ -1,0 +1,64 @@
+1. Differentiate between static and dynamic websites
+Static Website
+	The content cannot be manipulated after the script is executed
+	No way to change the content as it is predefined
+	
+Dynamic Website
+	The content can be changed even at the runtime
+	The content can be changed easily by manipulation and reloading
+	
+2. What are the types of variables present in PHP?
+There are eight primary data types in PHP as shown below:
+
+	Array: A named and ordered collection of data
+	Boolean: A logical value (True or False)
+	Double: Floating point numbers such as 5.1525
+	Integer: Whole numbers without a floating point
+	Object: An instance of classes, containing data and functions
+	NULL: A special data type, supporting only the NULL data
+	Resource: Special variables that hold references to external resources
+	String: A sequence of characters such as, “Hello learners!”
+
+3. What is NULL in PHP?
+NULL is a special data type in PHP used to denote the presence of only one value, NULL. You cannot assign any other value to it.
+NULL is not case sensitive in PHP and can be declared in two ways as shown below:
+$var = NULL: OR $var = NULL;
+
+4. What is the use of the constant() function in PHP?
+The constant() function is used to retrieve the values predefined in a constant variable. 
+It is used especially when you do not know the name of the variable.
+
+5. What are the various constants predefined in PHP?
+PHP consists of many constants, and following are some of the widely used ones:
+
+	_METHOD_: Represents the class name
+	_CLASS_: Returns the class name
+	_FUNCTION_: Denotes the function name
+	_LINE_: Denotes the working line number
+	_FILE_: Represents the path and the file name
+
+6. Differentiate between variables and constants in PHP?
+Variable	
+	Variables can have changed paths	
+	The default scope is the current access scope	
+	The $ assignment is used for definition	
+	Compulsory usage of the $ sign at the start	
+
+Constant
+	Constants cannot be changed
+	Constants can be accessed throughout without any scoping rules
+	Constants are defined using the define() function
+	No need for the $ sign for constants
+	
+7. Differentiate between PHP4 and PHP5?
+PHP4
+	No support for static methods
+	Abstract classes cannot be declared
+	The method of call-by-value is used
+	Constructors can have class names
+	
+PHP5
+	Allows the usage of static methods
+	Abstract classes can be declared
+	The method of call-by-reference is used
+	Constructors have separate names
